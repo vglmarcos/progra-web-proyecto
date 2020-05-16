@@ -1,0 +1,77 @@
+
+/**Font descargada de internet**/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/**Arreglos generales**/
+*{
+  box-sizing: border-border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+/**Barra de navegación**/
+.navegacion{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 20px;
+  border: 2px solid black;
+}
+
+.menu{
+  position:relative;
+  display: inline-block;
+  list-style: none;
+}
+
+.menu ul{
+  display: inline-block;
+}
+
+.menu li a{
+  display: block;
+  padding: 15px 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+    color: white;
+    background: green;
+    transition: all .3s;
+}
+
+.submenu{
+    position: relative;
+    z-index: 50;
+    background: black;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    list-style: none;
+}
+
+.submenu li a{
+
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover{
+    color: black;
+    background: greenyellow;
+    transition: all .3s;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/**Aquí termina la parte de la barra de navegació
