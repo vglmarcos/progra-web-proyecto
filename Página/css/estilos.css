@@ -12,30 +12,44 @@
 
 }
 
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
 /**Barra de navegación**/
 .navegacion{
-  font-family: "Montserrat", sans-serif;
+
   text-align: center;
   padding: 10px;
   margin: 20px 20px;
   border: 2px solid black;
+
 }
 
 .menu{
-  position:relative;
-  display: inline-block;
   list-style: none;
+  
+
+}
+
+.menu li{
+  display: inline-block;
 }
 
 .menu ul{
   display: inline-block;
+  float: left;
 }
+
 
 .menu li a{
   display: block;
   padding: 15px 10px;
   color: black;
-  text-decoration: none;
+
 }
 
 .menu li a:hover{
@@ -47,7 +61,6 @@
 .submenu{
     position: relative;
     z-index: 50;
-    background: black;
     width: 100%;
     visibility: hidden;
     opacity: 0;
@@ -74,4 +87,4 @@
     opacity: 1;
 }
 
-/**Aquí termina la parte de la barra de navegació
+/**Aquí termina la parte de la barra de navegación
