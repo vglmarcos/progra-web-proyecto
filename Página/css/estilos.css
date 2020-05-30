@@ -31,7 +31,8 @@ header{
 
 .menu{
   list-style: none;
-  
+  display: inline-flex;
+
 
 }
 
@@ -39,16 +40,17 @@ header{
   display: inline-block;
 }
 
-.menu ul{
+.menu li ul{
   display: inline-block;
-  float: left;
+  align-items: left;
 }
 
 
 .menu li a{
-  display: block;
+  display: inline-block;
   padding: 15px 10px;
-  color: black;
+  color: white;
+  text-decoration: none;
 
 }
 
@@ -70,7 +72,7 @@ header{
 
 .submenu li a{
 
-    display: block;
+
     padding: 15px;
     color: white;
     text-decoration: none;
@@ -87,4 +89,16 @@ header{
     opacity: 1;
 }
 
-/**Aquí termina la parte de la barra de navegación
+/**Aquí termina la parte de la barra de navegación**/
+
+.contenido h1{
+  color:white;
+  text-align: center;
+}
+
+.contenido p{
+  color:white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+
+}
