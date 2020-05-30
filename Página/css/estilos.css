@@ -92,6 +92,12 @@ header{
   text-align: center;
 }
 
+.contenido h2{
+  color:white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
 .contenido p{
   color:white;
   padding: 20px 20px;
