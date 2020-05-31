@@ -1,0 +1,34 @@
+Gutiérrez, P. (2013). Historia de HTML, un lenguaje de marca, que ha marcado historia. Enero 29, 2020, de Genbeta. Sitio web: https://www.genbeta.com/desarrollo/historia-de-html-un-lenguaje-de-marca-que-ha-marcado-historia
+
+Flores Herrera, J. (2015). ¿Qué es HTML? Enero 31, 2020, de Código facilito. Sitio web: https://codigofacilito.com/articulos/que-es-html
+
+Álvarez, M. (2001) Qué es HTML. Enero 31, 2020, de Desarrollo Web. Sitio web: https://desarrolloweb.com/articulos/que-es-html.html
+
+Eguiluz, J. (2014) XHTML. Febrero 03, 2020, de Creative Commons Reconocimiento. Sitio web:
+https://www.arkaitzgarro.com/xhtml/capitulo-3.html
+
+Anónimo. (S.F.) Tipos de etiquetas. Obtenido de Unidad Educativa Técnica “Vida Nueva”. Sitio web:
+http://proyectodegardo.weebly.com/tipos-de-etiquetas.html
+
+Anónimo. (S.F.) Etiquetas HTML. Obtenido de Acerdade HTML. Sitio Web:
+http://www.acercadehtml.com/etiquetas-html.html
+
+Desarrolladores de Mozilla. (2019). Validación de restricciones. 2019, de Mozilla Sitio web: https://developer.mozilla.org/es/docs/HTML/HTML5/Validacion_de_restricciones
+
+Anónimo. (2005). CSS. Mayo 23, 2020, de Mozilla Sitio web: https://developer.mozilla.org/es/docs/Web/CSS
+
+Victor Robles. (2020). Aprende HTML en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=mNbnV3aN3KA
+
+Victor Robles. (2020). Aprende CSS en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=3yM5uXp-T_0
+
+Anónimo. (2006). Breve historia de CSS. Mayo 30, 2020, de uniwebsidad Sitio web: https://uniwebsidad.com/libros/css/capitulo-1/breve-historia-de-css
+
+Anónimo. (2005). JavaScript. Mayo 30, 2020, de Mozilla Sitio web: https://developer.mozilla.org/es/docs/Web/JavaScript
+
+Tutoriales a tu Alcance. (2017). Introducción a PHP básico desde cero - Parte 1. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=m-ovirhigVQ
+
+Anónimo. (2001). ¿Qué es PHP?. Mayo 30, 2020, de PHP Sitio web: https://www.php.net/manual/es/intro-whatis.php
+
+Anónimo. (2016). Breve historia de PHP. Mayo 30, 2020, de desarrolloweb.com Sitio web: https://desarrolloweb.com/articulos/436.php
+
+Anónimo. (2019). Una breve revisión a la historia de Javascript. Mayo 30, 2020, de Reclu IT Sitio web: https://www.recluit.com/una-breve-revision-a-la-historia-de-javascript/#.XtL3XDPiuM8

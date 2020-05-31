@@ -1,0 +1,182 @@
+
+/**Font descargada de internet**/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/**Arreglos generales**/
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+header{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/**Barra de navegación**/
+.navegacion{
+
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  border: 2px solid black;
+
+}
+
+.menu{
+  list-style: none;
+  display: inline-flex;
+
+
+}
+
+.menu li{
+  display: inline-block;
+}
+
+.menu li a{
+  display: inline-block;
+  padding: 15px 10px;
+  color: white;
+  text-decoration: none;
+
+}
+
+.menu li a:hover{
+    color: white;
+    background: green;
+    transition: all .3s;
+}
+
+.submenu{
+    list-style: none;
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    visibility: visible;
+    opacity: 0;
+    transition: opacity 1s;
+    list-style: none;
+    display: block;
+    align-items: left;
+}
+
+.submenu li a{
+
+
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover{
+    color: black;
+    background: greenyellow;
+    transition: all .1s;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/**Aquí termina la parte de la barra de navegación**/
+
+.contenido h1{
+  color:white;
+  text-align: center;
+}
+
+.contenido h2{
+  color:white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+.contenido p{
+  color:white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+
+}
+
+
+
+
+header{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.navegacion{
+    text-align: center;
+    padding: 0px;
+    margin: 10px auto;
+    border: 2px solid black;
+  
+}
+  
+.menu{
+    list-style: none;
+    text-align: center;
+}
+
+.menu li a{
+    background-color: #24252A;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+	display: block;
+}
+
+.menu li a:hover{
+    color: white;
+    background: green;
+    transition: all .5s;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.menu li a:hover > .submenu {
+    display: block;
+}
+
+.submenu li a{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    color: #ffffff;
+	display: block;
+	position:relative;
+	text-align: center;
+    -webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.submenu li a:hover{
+    color: black;
+    background: greenyellow;
+    transition: all .1s;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
