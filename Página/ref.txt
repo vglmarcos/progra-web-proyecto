@@ -20,3 +20,15 @@ Anónimo. (2005). CSS. Mayo 23, 2020, de Mozilla Sitio web: https://developer.mo
 Victor Robles. (2020). Aprende HTML en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=mNbnV3aN3KA
 
 Victor Robles. (2020). Aprende CSS en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=3yM5uXp-T_0
+
+Anónimo. (2006). Breve historia de CSS. Mayo 30, 2020, de uniwebsidad Sitio web: https://uniwebsidad.com/libros/css/capitulo-1/breve-historia-de-css
+
+Anónimo. (2005). JavaScript. Mayo 30, 2020, de Mozilla Sitio web: https://developer.mozilla.org/es/docs/Web/JavaScript
+
+Tutoriales a tu Alcance. (2017). Introducción a PHP básico desde cero - Parte 1. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=m-ovirhigVQ
+
+Anónimo. (2001). ¿Qué es PHP?. Mayo 30, 2020, de PHP Sitio web: https://www.php.net/manual/es/intro-whatis.php
+
+Anónimo. (2016). Breve historia de PHP. Mayo 30, 2020, de desarrolloweb.com Sitio web: https://desarrolloweb.com/articulos/436.php
+
+Anónimo. (2019). Una breve revisión a la historia de Javascript. Mayo 30, 2020, de Reclu IT Sitio web: https://www.recluit.com/una-breve-revision-a-la-historia-de-javascript/#.XtL3XDPiuM8
