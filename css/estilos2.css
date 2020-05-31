@@ -68,3 +68,28 @@ ul, ol {
 }
 
 /**Aquí termina la parte de la barra de navegación**/
+
+.contenido h1{
+  color:white;
+  text-align: center;
+}
+
+.contenido h2{
+  color:white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+.contenido p{
+  color:white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+
+}
+
+.contenido li{
+  color:white;
+  padding: 5px 5px;
+  margin: 5px 20px;
+
+}

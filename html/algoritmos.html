@@ -5,7 +5,7 @@
     <title>Algoritmos de ordenamiento</title>
     <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
   </head>
   <body>
     <header>
@@ -47,6 +47,106 @@
     </header>
 
     <div class="contenido">
+
+      <h1>Algoritmo de ordenamiento</h1>
+      <p>En computación y matemáticas un algoritmo de ordenamiento es un algoritmo que pone elementos de una lista o un vector en una secuencia dada por una relación de orden, es decir, el resultado de salida ha de ser una permutación —o reordenamiento— de la entrada que satisfaga la relación de orden dada. Las relaciones de orden más usadas son el orden numérico y el orden lexicográfico. Ordenamientos eficientes son importantes para optimizar el uso de otros algoritmos (como los de búsqueda y fusión) que requieren listas ordenadas para una ejecución rápida. También es útil para poner datos en forma canónica y para generar resultados legibles por humanos.</p>
+      <p>Desde los comienzos de la computación, el problema del ordenamiento ha atraído gran cantidad de investigación, tal vez debido a la complejidad de resolverlo eficientemente a pesar de su planteamiento simple y familiar. Por ejemplo, BubbleSort fue analizado desde 1956. Aunque muchos puedan considerarlo un problema resuelto, nuevos y útiles algoritmos de ordenamiento se siguen inventado hasta el día de hoy (por ejemplo, el ordenamiento de biblioteca se publicó por primera vez en el 2004). Los algoritmos de ordenamiento son comunes en las clases introductorias a la computación, donde la abundancia de algoritmos para el problema proporciona una gentil introducción a la variedad de conceptos núcleo de los algoritmos, como notación de O mayúscula, algoritmos divide y vencerás, estructuras de datos, análisis de los casos peor, mejor, y promedio, y límites inferiores.</p>
+      <h2>Clasificación</h2>
+      <p>Los algoritmos de ordenamiento se pueden clasificar en las siguientes maneras:</p>
+      <p>La más común es clasificar según el lugar donde se realice la ordenación</p>
+      <li>Algoritmos de ordenamiento interno: en la memoria del ordenador.</li>
+      <li>Algoritmos de ordenamiento externo: en un lugar externo como un disco duro.</li>
+      <p>Por el tiempo que tardan en realizar la ordenación, dadas entradas ya ordenadas o inversamente ordenadas:</p>
+      <li>Algoritmos de ordenación natural: Tarda lo mínimo posible cuando la entrada está ordenada.</li>
+      <li>Algoritmos de ordenación no natural: Tarda lo mínimo posible cuando la entrada está inversamente ordenada.</li>
+      <p>Por estabilidad: un ordenamiento estable mantiene el orden relativo que tenían originalmente los elementos con claves iguales. Por ejemplo, si una lista ordenada por fecha se reordena en orden alfabético con un algoritmo estable, todos los elementos cuya clave alfabética sea la misma quedarán en orden de fecha. Otro caso sería cuando no interesan las mayúsculas y minúsculas, pero se quiere que, si una clave aBC estaba antes que AbC, en el resultado ambas claves aparezcan juntas y en el orden original: aBC, AbC. Cuando los elementos son indistinguibles (porque cada elemento se ordena por la clave completa) la estabilidad no interesa. Los algoritmos de ordenamiento que no son estables se pueden implementar para que sí lo sean. Una manera de hacer esto es modificar artificialmente la clave de ordenamiento de modo que la posición original en la lista participe del ordenamiento en caso de coincidencia.</p>
+      <h2>Estabilidad</h2>
+      <p>Los algoritmos de ordenamiento estable mantienen un relativo pre – orden total. Esto significa que un algoritmo es estable solo cuando hay dos registros R y S con la misma clave y con R apareciendo antes que S en la lista original.
+      Cuando elementos iguales (indistinguibles entre sí), como números enteros, o más generalmente, cualquier tipo de dato en donde el elemento entero es la clave, la estabilidad no es un problema.
+      </p>
+      <p>Los algoritmos de ordenamiento inestable pueden cambiar el orden relativo de registros con claves iguales, pero los algoritmos estables nunca lo hacen. Los algoritmos inestables pueden ser implementados especialmente para ser estables. Una forma de hacerlo es extender artificialmente el cotejamiento de claves, para que las comparaciones entre dos objetos con claves iguales sean decididas usando el orden de las entradas original. Recordar este orden entre dos objetos con claves iguales es una solución poco práctica, ya que generalmente acarrea tener almacenamiento adicional.</p>
+      <h2>Lista de algoritmos de ordenamiento</h2>
+      <table width=900>
+        <thead>
+          <tr>
+            <th>Nombre traducido</th>
+            <th>Nombre original</th>
+            <th>Complejidad</th>
+            <th>Memoria</th>
+            <th>Método</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th>Ordenamiento burbuja</th>
+            <th>Bubblesort</th>
+            <th>O(n^2)</th>
+            <th>O(1)</th>
+            <th>Intercambio</th>
+          </tr>
+
+          <tr>
+            <th>Ordenamiento por inserción</th>
+            <th>Insertion sort</th>
+            <th>O(n^2)</th>
+            <th>O(1)</th>
+            <th>Inserción</th>
+          </tr>
+
+          <tr>
+            <th>Ordenamiento por casilleros</th>
+            <th>Bucket sort</th>
+            <th>O(n)</th>
+            <th>O(n)</th>
+            <th>No comparativo</th>
+          </tr>
+
+          <tr>
+            <th>Ordenamiento con árbol binario</th>
+            <th>Binary tree sort</th>
+            <th>O(n log⁡ n)</th>
+            <th>O(n)</th>
+            <th>Inserción</th>
+          </tr>
+
+          <tr>
+            <th>Ordenamiento Radix</th>
+            <th>Radix sort</th>
+            <th>O(nk)</th>
+            <th>O(n)</th>
+            <th>No comparativo</th>
+          </tr>
+
+          <tr>
+            <th>Ordenamiento Shell</th>
+            <th>Shell sort</th>
+            <th>O(n^2)</th>
+            <th>O(1)</th>
+            <th>Inserción</th>
+          </tr>
+
+          <tr>
+            <th>Ordenamiento rápido</th>
+            <th>Quicksort</th>
+            <th>O(n^2)</th>
+            <th>O(log ⁡n)</th>
+            <th>Partición</th>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+      <img class="algoritmos" src="../img/algoritmos1.gif" alt="algoritmos">
+      <p>Quicksort en acción sobre una lista de números aleatorios. Las líneas horizontales son valores pivote.</p>
+
+      <h2>Video</h2>
+      <p>A continuación un video del método Quicksort para entenderlo mejor: https://www.youtube.com/watch?v=DYmTpUfcyT8</p>
+      <video controls>
+        <source src="../video/algoritmos.mp4" type="video/mp4" preload"metadata">
+
+      </video>
 
 
 

@@ -17,9 +17,9 @@ Desarrolladores de Mozilla. (2019). Validación de restricciones. 2019, de Mozil
 
 Anónimo. (2005). CSS. Mayo 23, 2020, de Mozilla Sitio web: https://developer.mozilla.org/es/docs/Web/CSS
 
-Victor Robles. (2020). Aprende HTML en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=mNbnV3aN3KA
+Robles, V. (2020). Aprende HTML en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=mNbnV3aN3KA
 
-Victor Robles. (2020). Aprende CSS en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=3yM5uXp-T_0
+Robles, V. (2020). Aprende CSS en 15 Minutos. Mayo 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=3yM5uXp-T_0
 
 Anónimo. (2006). Breve historia de CSS. Mayo 30, 2020, de uniwebsidad Sitio web: https://uniwebsidad.com/libros/css/capitulo-1/breve-historia-de-css
 
@@ -40,3 +40,13 @@ Anónimo. (2019). Una breve revisión a la historia de Javascript. Mayo 30, 2020
 Ánonimo. Algoritmos de Ordenamiento. 2020, de monografias.com, Sitio web: https://www.monografias.com/trabajos/algordenam/algordenam.shtml
 
 Universidad Tecnológica de Pereira. Algoritmo búsqueda en profundidad. 2020, de Universidad Tecnológica de Pereira, Sitio web: https://sites.google.com/a/utp.edu.co/inteligencia-artificial/algoritmo-busqueda-en-profundidad
+
+de Dios, J. (2019). DIAGRAMA DE FLUJO. Mayo 29, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=8bd9G0Cg160
+
+Castro, J. (2019). Notación Asintótica. Mayo 29, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=kGrgIvRcojo
+
+Montero, L. (2017). Algoritmos - Ordenamiento rápido - Quick Sort. Mayo 29, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=DYmTpUfcyT8
+
+Torre, D. (2020). Búsqueda en Profundidad. Mayo 28, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=UYtnHmls2ec
+
+OpenWebinars. (2018). 12 CARACTERÍSTICAS Y VENTAJAS DE PHP. Mayo, 30, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=5JM_y3c7PP0

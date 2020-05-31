@@ -5,7 +5,7 @@
     <title>Búsqueda de profundidad</title>
     <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
   </head>
   <body>
     <header>
@@ -47,6 +47,25 @@
     </header>
 
     <div class="contenido">
+      <h1>Algoritmo búsqueda en profundidad</h1>
+      <p>Una Búsqueda en profundidad (en inglés DFS o Depth First Search) es un algoritmo de búsqueda no informada utilizado para recorrer todos los nodos de un grafo o árbol (teoría de grafos) de manera ordenada, pero no uniforme. Su funcionamiento consiste en ir expandiendo todos y cada uno de los nodos que va localizando, de forma recurrente, en un camino concreto. Cuando ya no quedan más nodos que visitar en dicho camino, regresa (Backtracking), de modo que repite el mismo proceso con cada uno de los hermanos del nodo ya procesado.</p>
+      <h2>Evaluaión</h2>
+      <li>Completitud: DFS es completo si y solo si usamos búsqueda basada en grafos en espacios de estado finitos, pues todos los nodos serán expandidos.</li>
+      <li>Optimalidad: DFS en ningún caso asegura la optimalidad, pues puede encontrar una solución más profunda que otra en una rama que todavía no ha sido expandida.</li>
+      <li>Complejidad temporal: en el peor caso, es O(b^m), siendo b el factor de ramificación (número promedio de ramificaciones por nodo) y m la máxima profundidad del espacio de estados.</li>
+      <li>Complejidad espacial: O(b^m), siendo b el factor de ramificación y d la profundidad de la solución menos costosa, pues cada nodo generado permanece en memoria, almacenándose la mayor cantidad de nodos en el nivel meta.</li>
+      <h2>Ejemplo</h2>
+      <p>Para el grafo siguiente:</p>
+      <img class="busqueda" src="../img/busqueda1.jpg" alt="busqueda">
+      <p>Una búsqueda en profundidad empezando en el nodo A, con la suposición que las aristas a la izquierda son escogidas antes de las aristas a la derecha, el algoritmo va a visitar los nodos en esta orden: A, B, D, F, E, C, G. Se puede notar que, si el algoritmo no recuerde los nodos ya visitados, el algoritmo podría continuar en una vuelta infinita A, B, D, F, E, A, B, D, F, E, etc. sin visitar C o G.</p>
+      <img class="busqueda" src="../img/busqueda2.png" alt="busqueda">
+
+      <h2>Video</h2>
+      <p>A continuación se muestra un video que explica un ejemplo de esto en el siguiente link: https://www.youtube.com/watch?v=UYtnHmls2ec</p>
+      <video controls>
+        <source src="../video/busqueda.mp4" type="video/mp4" preload"metadata">
+
+      </video>
 
 
 
