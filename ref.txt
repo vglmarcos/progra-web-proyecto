@@ -41,6 +41,12 @@ Anónimo. (2019). Una breve revisión a la historia de Javascript. Mayo 30, 2020
 
 Universidad Tecnológica de Pereira. Algoritmo búsqueda en profundidad. 2020, de Universidad Tecnológica de Pereira, Sitio web: https://sites.google.com/a/utp.edu.co/inteligencia-artificial/algoritmo-busqueda-en-profundidad
 
+Anónimo. (s.f). T3: Estructuras Básicas. Junio 7, 2020, de Itca, Sitio web: https://virtual.itca.edu.sv/Mediadores/dlp/t3_estructuras_de_datos.html
+
+Anónimo. (s.f). Recursividad. Junio 7, 2020, de UV, Sitio web: https://www.uv.mx/personal/ocastillo/files/2011/04/Recursividad.pdf
+
+Anónimo. (s.f). Arreglos (Informática). Junio 7, 2020, de Ecured, Sitio web: https://www.ecured.cu/Arreglos_(Inform%C3%A1tica)
+
 de Dios, J. (2019). DIAGRAMA DE FLUJO. Mayo 29, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=8bd9G0Cg160
 
 Castro, J. (2019). Notación Asintótica. Mayo 29, 2020, de YouTube Sitio web: https://www.youtube.com/watch?v=kGrgIvRcojo
