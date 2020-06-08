@@ -73,6 +73,8 @@ const limpiarLista = () => {
         }
     }
     btnAgregarElemento.removeAttribute('disabled');
+    btnLimpiarLista.setAttribute('disabled', 'true');
+    btnOrdenarLista.setAttribute('disabled', 'true');
     document.getElementById('campoElemento').value = '';
 };
 
