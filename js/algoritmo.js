@@ -44,11 +44,11 @@ const ordenarLista = () => {
                 }
                 i = i + 1;
             }
-            for (var i = 0; i < arrayOrder.length; i++) {
+            arrayOrder.forEach(element => {
                 const nuevoItem = document.createElement('li');
-                nuevoItem.innerHTML = `${arrayOrder[i]}`;
+                nuevoItem.innerHTML = `${element}`;
                 listaNumerosOrdenados.appendChild(nuevoItem);
-            }
+            });
         } else {
             arrayOrder.push(array[0]);
             const nuevoItem = document.createElement('li');
