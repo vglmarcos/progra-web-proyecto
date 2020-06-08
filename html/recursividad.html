@@ -72,13 +72,18 @@
     </div>
 
     <div class="Serie">
-      <form action="" method="get">
-          <input type="text" id="num" required>
-          <input id = "btn" type="submit" value="Consultar">
+      <form id = "form-fibo">
+          <input type="text" id="numFibonacci">
+          <input id = "btnGenerar" type="submit" value="Generar">
       </form>
-
-      <script src="../js/Fibonacci.js"> </script>
+      <div>
+        <br>
+        <p id = "dibujarFibonacci">
+          <!--Aquí se dibujara la sucesión fibonacci-->
+        </p>
+        <br>
+      </div>
   </div>
-
+  <script src="../js/Fibonacci.js"> </script>
   </body>
 </html>

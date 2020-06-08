@@ -1,21 +1,49 @@
-var num = document.getElementById("num").value; 
-let isNumber = !isNaN(parseInt(document.getElementById("num").value)); 
-var i, x;
-/*num= prompt ("Ingresa el número de elementos de la Sucesión de Fibonacci que desee obtener"); */
+const numFibonacci = document.getElementById('numFibonacci'); // input
+const btnGenerar = document.getElementById('btnGenerar'); // botón
+const dibujarFibonacci = document.getElementById('dibujarFibonacci'); // Espacio donde agregara la serie
+const formFibo = document.getElementById('form-fibo'); // Formulario que envía el submit
 
-function fibo(x) {
-    if(x==0 || x==1){
-        return x;
+const fibonacci = (x) => {
+    if (x === 0 || x === 1) {
+        return (x);
     }
-    else{
-        return (fibo(x-1)+ fibo(x-2));
+    return (fibonacci(x - 1) + fibonacci(x - 2));
+}
+
+const ejecutarFibonacci = () => {
+    dibujarFibonacci.innerHTML = '';
+    const isNumber = !isNaN(parseInt(numFibonacci.value));
+    if (isNumber) {
+        const n = parseInt(numFibonacci.value);
+        if (n < 0) {
+            confirm('Solo se admiten valores positivos.');
+        } else if (n === 0) {
+            confirm('0 números fibonacci para ti. :)');
+        } else if (n > 30) {
+            confirm('Cantidad enorme, al ser recursivo gasta más memoria cuando se generan cantidades grandes.');
+        } else {
+            for (let i = 0; i < n; i++) {
+                if (i + 1 === n) {
+                    dibujarFibonacci.innerHTML += `
+                        ${fibonacci(i)}.
+                    `
+                } else {
+                    dibujarFibonacci.innerHTML += `
+                        ${fibonacci(i)}, 
+                    `
+                }
+            }
+        }
+    } else {
+        confirm('Solo se deben ingresar números enteros.');
     }
 };
 
-document.write("Sucesión de Fibonacci:  ");
-for (i = 1; i <= num; i++){
-    document.write(fibo(i)+ " , " );
-}
+// Eventos
+btnGenerar.addEventListener('click', ejecutarFibonacci);
+formFibo.addEventListener('submit', (event) => {
+    event.preventDefault();
+})
 
 
 
