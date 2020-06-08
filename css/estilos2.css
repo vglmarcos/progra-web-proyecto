@@ -11,7 +11,7 @@
 
 header{
     margin: 20px auto;
-    width: 95%;
+    width: 90%;
     font-size: 18px;
 }
 
@@ -33,7 +33,7 @@ ul, ol {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 15px 108px;
+    padding: 15px 97px;
 }
 
 .menu li a:hover{
@@ -49,8 +49,22 @@ ul, ol {
     display: none;
     position: absolute;
     align-items: left;
-    min-width: 350px;
     border: 2px solid black;
+}
+
+.prog {
+    max-width: 320px;
+    padding: 0px 0px;
+}
+
+.lenguajes {
+    min-width: 330px;
+    padding: 0px 0px;
+}
+
+.algoritmos {
+    min-width: 459px;
+    padding: 0px 0px;
 }
 
 .menu li:hover >ul{
