@@ -1,3 +1,55 @@
+// Código sacado de https://gist.github.com/ger86/b94d5ba92e667bb631a745b8cf297723#file-quicksort-test-js
+// por Ger86
+
+const defaultSortingAlgorithm = (a, b) => {
+    if (a < b) {
+        return -1;
+    }
+    if (a > b) {
+        return 1;
+    }
+    return 0;
+};
+
+const quickSort = (unsortedArray, sortingAlgorithm = defaultSortingAlgorithm) => {
+    // immutable version
+    const sortedArray = [...unsortedArray];
+
+    const swapArrayElements = (arrayToSwap, i, j) => {
+        const a = arrayToSwap[i];
+        arrayToSwap[i] = arrayToSwap[j];
+        arrayToSwap[j] = a;
+    };
+
+    const partition = (arrayToDivide, start, end) => {
+        const pivot = arrayToDivide[end];
+        let splitIndex = start;
+        for (let j = start; j <= end - 1; j++) {
+            const sortValue = sortingAlgorithm(arrayToDivide[j], pivot);
+            if (sortValue === -1) {
+                swapArrayElements(arrayToDivide, splitIndex, j);
+                splitIndex++;
+            }
+        }
+        swapArrayElements(arrayToDivide, splitIndex, end);
+        return splitIndex;
+    };
+
+    // Recursively sort sub-arrays.
+    const recursiveSort = (arraytoSort, start, end) => {
+        // stop condition
+        if (start < end) {
+            const pivotPosition = partition(arraytoSort, start, end);
+            recursiveSort(arraytoSort, start, pivotPosition - 1);
+            recursiveSort(arraytoSort, pivotPosition + 1, end);
+        }
+    };
+
+    // Sort the entire array.
+    recursiveSort(sortedArray, 0, unsortedArray.length - 1);
+    return sortedArray;
+};
+
 const btnAgregarElemento = document.getElementById('agregarElemento');
 const btnLimpiarLista = document.getElementById('limpiarLista');
 const btnOrdenarLista = document.getElementById('ordenarLista');
@@ -26,24 +78,8 @@ const ordenarLista = () => {
         while (listaNumerosOrdenados.firstChild) {
             listaNumerosOrdenados.removeChild(listaNumerosOrdenados.firstChild);
         }
-        arrayOrder = array;
+        arrayOrder = quickSort(array);
         if (arrayOrder.length > 1) {
-            var temp;
-            const isNon = arrayOrder.length % 2 === 0 ? false : true;
-            for (var i = 0; i < arrayOrder.length; i++) {
-                if (i + 1 === arrayOrder.length) {
-                    if (!isNon) {
-                        temp = arrayOrder[i]
-                        arrayOrder[i] = arrayOrder[i + 1];
-                        arrayOrder[i + 1] = temp;
-                    }
-                } else {
-                    temp = arrayOrder[i]
-                    arrayOrder[i] = arrayOrder[i + 1];
-                    arrayOrder[i + 1] = temp;
-                }
-                i = i + 1;
-            }
             arrayOrder.forEach(element => {
                 const nuevoItem = document.createElement('li');
                 nuevoItem.innerHTML = `${element}`;

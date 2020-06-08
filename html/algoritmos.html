@@ -143,6 +143,23 @@
 
       <h2>Video</h2>
       <p>A continuación un video del método Quicksort para entenderlo mejor: https://www.youtube.com/watch?v=DYmTpUfcyT8</p>
+      
+      <form>
+        <input type="text" id="campoElemento">
+        <input id = "agregarElemento" type="submit" value="Agregar">
+        <input id = "ordenarLista" type="submit" value="Ordenar">
+        <input id = "limpiarLista" type="submit" value="Limpiar">
+      </form>
+      <div id = "lista-numeros">
+        <!--Aquí se renderizan los items que agrega el usuario-->
+      </div>
+      <br>
+      <hr>
+      <br>
+      <div id = "lista-numeros-ordenados">
+        <!--Aquí se renderizan los items ordenados por el algoritmo-->
+      </div>
+      
       <video controls>
         <source src="../video/algoritmos.mp4" type="video/mp4" preload"metadata">
 
@@ -151,6 +168,6 @@
 
 
     </div>
-
+    <script src="../js/quickSort.js"></script>
   </body>
 </html>
