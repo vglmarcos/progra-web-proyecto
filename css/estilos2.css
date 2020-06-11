@@ -133,7 +133,8 @@ img{
 table{
     border-collapse: collapse;
     border: 1px solid #333;
-    width: 60%;      
+    font-size: 1.1em;
+    color:#093b5e;
 }
 th{
             border: 1px solid #333;
@@ -141,13 +142,11 @@ th{
             text-align: center;
             vertical-align: middle;
             font-size: 0.9em;
-            padding: 5px;
+            padding: 4px;
             
         }
         td{
             border: 1px solid #333;
             vertical-align: middle;
             font-size: 0.9em;
-            padding: 4px;
         }
- 
