@@ -9,4 +9,4 @@ const contador = () => {
     return n;
 };
 
-document.getElementById("contador").innerHTML = "Visitante número: " + contador();
+document.getElementById("contador").innerHTML = "<h3>Visitante número: " + contador() + "</h3>";

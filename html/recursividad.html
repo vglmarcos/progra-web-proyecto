@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Recursividad</title>
-    <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilos2.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navegacion">
-        <ul class="menu">
 
-          <li><a href="../index.html">Inicio</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>Recursividad</title>
+  <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/estilos2.css">
+</head>
 
-          <li><a href="#">Lenguajes web</a>
-            <ul class="submenu lenguajes">
-              <li><a href="html.html">HTML</a></li>
-              <li><a href="css.html">CSS</a></li>
-              <li><a href="js.html">JavaScript</a></li>
-              <li><a href="php.html">PHP</a></li>
-            </ul>
-          </li>
+<body>
+  <header>
+    <nav class="navegacion">
+      <ul class="menu">
 
-          <li><a href="#">Programación</a>
-            <ul class="submenu prog">
-              <li><a href="estructuras.html">Estructuras básicas</a></li>
-              <li><a href="recursividad.html">Recursividad</a></li>
-              <li><a href="poo.html">POO</a></li>
-              <li><a href="arreglos.html">Arreglos</a></li>
-            </ul>
-          </li>
+        <li><a href="../index.html">Inicio</a></li>
 
-          <li><a href="#">Algoritmos Computacionales</a>
-            <ul class="submenu algoritmos">
-              <li><a href="diagramas.html">Diagramas</a></li>
-              <li><a href="notacion.html">Notación</a></li>
-              <li><a href="algoritmos.html">Algoritmos</a></li>
-              <li><a href="busqueda.html">Búsqueda</a></li>
-            </ul>
-          </li>
+        <li><a href="#">Lenguajes web</a>
+          <ul class="submenu lenguajes">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+            <li><a href="php.html">PHP</a></li>
+          </ul>
+        </li>
 
-        </ul>
+        <li><a href="#">Programación</a>
+          <ul class="submenu prog">
+            <li><a href="estructuras.html">Estructuras básicas</a></li>
+            <li><a href="recursividad.html">Recursividad</a></li>
+            <li><a href="poo.html">POO</a></li>
+            <li><a href="arreglos.html">Arreglos</a></li>
+          </ul>
+        </li>
 
-      </nav>
-    </header>
+        <li><a href="#">Algoritmos Computacionales</a>
+          <ul class="submenu algoritmos">
+            <li><a href="diagramas.html">Diagramas</a></li>
+            <li><a href="notacion.html">Notación</a></li>
+            <li><a href="algoritmos.html">Algoritmos</a></li>
+            <li><a href="busqueda.html">Búsqueda</a></li>
+          </ul>
+        </li>
 
-    <div class="contenido">
-      <h1>Recursividad</h1>
-      <p>
-        <img class="recursividad" src="../img/recursion1.png" alt="recursividad">
-        La recursividad es un concepto fundamental en matemáticas y en computación. Es una alternativa diferente para implementar estructuras de repetición 
-        (ciclos). Los módulos se hacen llamadas recursivas. Se puede usar en toda situación en la cual la solución pueda ser expresada como una secuencia de 
-        movimientos, pasos o transformaciones gobernadas por un conjunto de reglas no ambiguas. <br><br>
+      </ul>
 
-        Las <b>funciones recursivas</b> se componen de:
+    </nav>
+  </header>
 
-        <ul class="list-recursividad">
-          <li><b>Caso base : </b> Una solución simple para un caso particular (puede haber más de un caso base).</li>
-          <li><b>Caso recursivo : </b>Una solución que involucra volver a utilizar la función original, con parámetros que se acercan más al caso base. En este el 
-          procedimeinto se llama a sí mismo, haciendo que el problema se resuelva tratando el mismo problema pero de menor tamaño hasta llegar al caso base</li>
-        </ul>
-      </p>
-      <p>
-        Los programas recursivos son más cercanos a la descripción matemática, más faciles de analizar, se adaptan mejor a las estructuras de datos y ofrecen
-        soluciones simples. Sin embargo, cuando se úsan arreglos largos, o se ocupa una larga ejecución es mejor el uso de la iteración. <br><br>
+  <div class="contenido">
+    <h1>Recursividad</h1>
+    <p>
+      <img class="recursividad" src="../img/recursion1.png" alt="recursividad">
+      La recursividad es un concepto fundamental en matemáticas y en computación. Es una alternativa diferente para
+      implementar estructuras de repetición
+      (ciclos). Los módulos se hacen llamadas recursivas. Se puede usar en toda situación en la cual la solución pueda
+      ser expresada como una secuencia de
+      movimientos, pasos o transformaciones gobernadas por un conjunto de reglas no ambiguas. <br><br>
 
-        Cuando un procedimeinto incluye una llamada a sí mismo se conoce como <b>recursión directa</b>. Cuando un procedimiento llama a otro procedimiento y éste 
-        causa que el procedimiento original sea invocado, se conoce como <b>recursión indirecta</b>.
-      </p>
-    </div>
+      Las <b>funciones recursivas</b> se componen de:
 
-    <div class="Serie">
-      <form id = "form-fibo">
-          <input type="text" id="numFibonacci">
-          <input id = "btnGenerar" type="submit" value="Generar">
-      </form>
-      <div>
-        <br>
-        <p id = "dibujarFibonacci">
+    <ul class="list-recursividad">
+      <li><b>Caso base : </b> Una solución simple para un caso particular (puede haber más de un caso base).</li>
+      <li><b>Caso recursivo : </b>Una solución que involucra volver a utilizar la función original, con parámetros que
+        se acercan más al caso base. En este el
+        procedimeinto se llama a sí mismo, haciendo que el problema se resuelva tratando el mismo problema pero de menor
+        tamaño hasta llegar al caso base</li>
+    </ul>
+    </p>
+    <p>
+      Los programas recursivos son más cercanos a la descripción matemática, más faciles de analizar, se adaptan mejor a
+      las estructuras de datos y ofrecen
+      soluciones simples. Sin embargo, cuando se úsan arreglos largos, o se ocupa una larga ejecución es mejor el uso de
+      la iteración. <br><br>
+
+      Cuando un procedimeinto incluye una llamada a sí mismo se conoce como <b>recursión directa</b>. Cuando un
+      procedimiento llama a otro procedimiento y éste
+      causa que el procedimiento original sea invocado, se conoce como <b>recursión indirecta</b>.
+    </p>
+  </div>
+
+  <div class="Serie">
+    <form id="form-fibo">
+      <input type="text" id="numFibonacci">
+      <input id="btnGenerar" type="submit" value="Generar">
+    </form>
+    <div>
+      <br>
+      <h3>
+        <p id="dibujarFibonacci">
           <!--Aquí se dibujara la sucesión fibonacci-->
         </p>
-        <br>
-      </div>
+      </h3>
+      <br>
+    </div>
   </div>
   <script src="../js/Fibonacci.js"> </script>
-  </body>
+</body>
+
 </html>
