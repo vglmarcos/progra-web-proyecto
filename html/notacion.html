@@ -1,73 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Notación de complejidad asintótica</title>
-    <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilos2.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navegacion">
-        <ul class="menu">
 
-          <li><a href="../index.html">Inicio</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>Notación de complejidad asintótica</title>
+  <link rel="stylesheet" href="../css/estilos2.css">
+</head>
 
-          <li><a href="#">Lenguajes web</a>
-            <ul class="submenu lenguajes">
-              <li><a href="html.html">HTML</a></li>
-              <li><a href="css.html">CSS</a></li>
-              <li><a href="js.html">JavaScript</a></li>
-              <li><a href="php.html">PHP</a></li>
-            </ul>
-          </li>
+<body>
+  <header>
+    <nav class="navegacion">
+      <ul class="menu">
 
-          <li><a href="#">Programación</a>
-            <ul class="submenu prog">
-              <li><a href="estructuras.html">Estructuras básicas</a></li>
-              <li><a href="recursividad.html">Recursividad</a></li>
-              <li><a href="poo.html">POO</a></li>
-              <li><a href="arreglos.html">Arreglos</a></li>
-            </ul>
-          </li>
+        <li><a href="../index.html">Inicio</a></li>
 
-          <li><a href="#">Algoritmos Computacionales</a>
-            <ul class="submenu algoritmos">
-              <li><a href="diagramas.html">Diagramas</a></li>
-              <li><a href="notacion.html">Notación</a></li>
-              <li><a href="algoritmos.html">Algoritmos</a></li>
-              <li><a href="busqueda.html">Búsqueda</a></li>
-            </ul>
-          </li>
+        <li><a href="#">Lenguajes web</a>
+          <ul class="submenu lenguajes">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+            <li><a href="php.html">PHP</a></li>
+          </ul>
+        </li>
 
-        </ul>
+        <li><a href="#">Programación</a>
+          <ul class="submenu prog">
+            <li><a href="estructuras.html">Estructuras básicas</a></li>
+            <li><a href="recursividad.html">Recursividad</a></li>
+            <li><a href="poo.html">POO</a></li>
+            <li><a href="arreglos.html">Arreglos</a></li>
+          </ul>
+        </li>
 
-      </nav>
-    </header>
+        <li><a href="#">Algoritmos Computacionales</a>
+          <ul class="submenu algoritmos">
+            <li><a href="diagramas.html">Diagramas</a></li>
+            <li><a href="notacion.html">Notación</a></li>
+            <li><a href="algoritmos.html">Algoritmos</a></li>
+            <li><a href="busqueda.html">Búsqueda</a></li>
+          </ul>
+        </li>
 
-    <div class="contenido">
+      </ul>
 
-      <h1>Notación asintótica</h1>
-      <p>El tiempo de ejecución de un algoritmo depende de cuánto tiempo le tome a una computadora ejecutar las líneas de código del algoritmo, y eso depende de la velocidad de la computadora, el lenguaje de programación y el compilador que traduce el programa del lenguaje de programación al código que se ejecuta directamente en la computadora, entre otros factores.
-      Pensemos más cuidadosamente acerca del tiempo de ejecución de un algoritmo. Podemos usar una combinación de dos ideas. Primero, necesitamos determinar cuánto tiempo se tarda el algoritmo, en términos del tamaño de su entrada. Esta idea tiene sentido intuitivamente, ¿o no? Ya vimos que el número máximo de intentos en una búsqueda lineal y una búsqueda binaria aumenta a medida que la longitud del arreglo aumenta. O piensa en un GPS. Si solo supiera acerca del sistema carretero del país, y no acerca de cada pequeño camino, sería capaz de encontrar rutas más rápido, ¿cierto? Así que pensamos acerca del tiempo de ejecución del algoritmo como una función del tamaño de su entrada.
-      </p>
-      <p>La segunda idea es que debemos enfocarnos en qué tan rápido crece una función con el tamaño de la entrada. A esto lo llamamos la tasa de crecimiento del tiempo de ejecución. Para mantener las cosas manejables, tenemos que simplificar la función para extraer la parte más importante y dejar de lado las partes menos importantes. Por ejemplo, supón que un algoritmo, que corre con una entrada de tamaño n, se tarda 6n^2  + 100n + 300 instrucciones de máquina. El término 6n^2 se vuelve más grande que el resto de los términos, 100n+300, una vez que n se hace suficientemente grande, 20 en este caso. Aquí hay una gráfica que muestra los valores de 6n^2 y de 100n+300 para valores de n de 0 a 100.</p>
-      <img class="notacion" src="../img/notacion1.png" alt="notacion">
-      <p>Diríamos que el tiempo de ejecución de este algoritmo crece como n^2, descartando el coeficiente 6 y los términos restantes 100n+300. En realidad, no importa qué coeficiente usemos; siempre que el tiempo de ejecución sea an^2+bn+c, para algunos números a>0,b y c, siempre habrá un valor de n para el cual an^2 sea mayor que bn+c, y esta diferencia aumenta a medida que n aumenta.</p>
-      <h2>Funciones</h2>
-      <p>	f(n) = an (algoritmos lineales)</p>
-      <p>	f(n) = an^2 (algoritmos cuadráticos)</p>
-      <p>	f(n) = an^3 (algoritmos cúbicos)</p>
-      <p>Un algoritmo puede estar compuesto de dos o más operaciones, por lo que determinar la complejidad depende de identificar la operación más costosa en el algoritmo.</p>
+    </nav>
+  </header>
 
-      <h2>Video</h2>
-      <p>Aquí se muestra un video donde habla acerca de notación asintótica: https://www.youtube.com/watch?v=kGrgIvRcojo</p>
-      <video controls>
-        <source src="../video/notacion.mp4" type="video/mp4" preload"metadata">
+  <div class="contenido">
 
-      </video>
-    </div>
+    <h1>Notación asintótica</h1>
+    <p>El tiempo de ejecución de un algoritmo depende de cuánto tiempo le tome a una computadora ejecutar las líneas de
+      código del algoritmo, y eso depende de la velocidad de la computadora, el lenguaje de programación y el compilador
+      que traduce el programa del lenguaje de programación al código que se ejecuta directamente en la computadora,
+      entre otros factores.
+      Pensemos más cuidadosamente acerca del tiempo de ejecución de un algoritmo. Podemos usar una combinación de dos
+      ideas. Primero, necesitamos determinar cuánto tiempo se tarda el algoritmo, en términos del tamaño de su entrada.
+      Esta idea tiene sentido intuitivamente, ¿o no? Ya vimos que el número máximo de intentos en una búsqueda lineal y
+      una búsqueda binaria aumenta a medida que la longitud del arreglo aumenta. O piensa en un GPS. Si solo supiera
+      acerca del sistema carretero del país, y no acerca de cada pequeño camino, sería capaz de encontrar rutas más
+      rápido, ¿cierto? Así que pensamos acerca del tiempo de ejecución del algoritmo como una función del tamaño de su
+      entrada.
+    </p>
+    <p>La segunda idea es que debemos enfocarnos en qué tan rápido crece una función con el tamaño de la entrada. A esto
+      lo llamamos la tasa de crecimiento del tiempo de ejecución. Para mantener las cosas manejables, tenemos que
+      simplificar la función para extraer la parte más importante y dejar de lado las partes menos importantes. Por
+      ejemplo, supón que un algoritmo, que corre con una entrada de tamaño n, se tarda 6n^2 + 100n + 300 instrucciones
+      de máquina. El término 6n^2 se vuelve más grande que el resto de los términos, 100n+300, una vez que n se hace
+      suficientemente grande, 20 en este caso. Aquí hay una gráfica que muestra los valores de 6n^2 y de 100n+300 para
+      valores de n de 0 a 100.</p>
+    <img class="notacion" src="../img/notacion1.png" alt="notacion">
+    <p>Diríamos que el tiempo de ejecución de este algoritmo crece como n^2, descartando el coeficiente 6 y los términos
+      restantes 100n+300. En realidad, no importa qué coeficiente usemos; siempre que el tiempo de ejecución sea
+      an^2+bn+c, para algunos números a>0,b y c, siempre habrá un valor de n para el cual an^2 sea mayor que bn+c, y
+      esta diferencia aumenta a medida que n aumenta.</p>
+    <h2>Funciones</h2>
+    <p> f(n) = an (algoritmos lineales)</p>
+    <p> f(n) = an^2 (algoritmos cuadráticos)</p>
+    <p> f(n) = an^3 (algoritmos cúbicos)</p>
+    <p>Un algoritmo puede estar compuesto de dos o más operaciones, por lo que determinar la complejidad depende de
+      identificar la operación más costosa en el algoritmo.</p>
 
-  </body>
+    <h2>Video</h2>
+    <p>Aquí se muestra un video donde habla acerca de notación asintótica: https://www.youtube.com/watch?v=kGrgIvRcojo
+    </p>
+    <video controls>
+      <source src="../video/notacion.mp4" type="video/mp4" preload="metadata">
+
+    </video>
+  </div>
+
+</body>
+
 </html>

@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>Recursividad</title>
-  <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
-  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/estilos2.css">
 </head>
 
@@ -51,7 +49,7 @@
   <div class="contenido">
     <h1>Recursividad</h1>
     <p>
-      <img class="recursividad" src="../img/recursion1.png" alt="recursividad">
+      <img class="recursividad" src="../img/recursion1.png" alt="recursividad"><br>
       La recursividad es un concepto fundamental en matemáticas y en computación. Es una alternativa diferente para
       implementar estructuras de repetición
       (ciclos). Los módulos se hacen llamadas recursivas. Se puede usar en toda situación en la cual la solución pueda
@@ -78,21 +76,23 @@
       procedimiento llama a otro procedimiento y éste
       causa que el procedimiento original sea invocado, se conoce como <b>recursión indirecta</b>.
     </p>
-  </div>
 
-  <div class="Serie">
-    <form id="form-fibo">
-      <input type="text" id="numFibonacci">
-      <input id="btnGenerar" type="submit" value="Generar">
-    </form>
-    <div>
-      <br>
-      <h3>
-        <p id="dibujarFibonacci">
-          <!--Aquí se dibujara la sucesión fibonacci-->
-        </p>
-      </h3>
-      <br>
+    <h2>Ejemplo de recursividad con la serie Fibonacci con JavaScript</h2>
+    <br>
+    <div class="Serie">
+      <form id="form-fibo">
+        <input type="text" id="numFibonacci">
+        <input id="btnGenerar" type="submit" value="Generar">
+      </form>
+      <div>
+        <br>
+        <h3>
+          <p id="dibujarFibonacci">
+            <!--Aquí se dibujara la sucesión fibonacci-->
+          </p>
+        </h3>
+        <br>
+      </div>
     </div>
   </div>
   <script src="../js/Fibonacci.js"> </script>

@@ -1,98 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Programación Orientada a Objetos</title>
-    <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilos2.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navegacion">
-        <ul class="menu">
 
-          <li><a href="../index.html">Inicio</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>Programación Orientada a Objetos</title>
+  <link rel="stylesheet" href="../css/estilos2.css">
+</head>
 
-          <li><a href="#">Lenguajes web</a>
-            <ul class="submenu lenguajes">
-              <li><a href="html.html">HTML</a></li>
-              <li><a href="css.html">CSS</a></li>
-              <li><a href="js.html">JavaScript</a></li>
-              <li><a href="php.html">PHP</a></li>
-            </ul>
-          </li>
+<body>
+  <header>
+    <nav class="navegacion">
+      <ul class="menu">
 
-          <li><a href="#">Programación</a>
-            <ul class="submenu prog">
-              <li><a href="estructuras.html">Estructuras básicas</a></li>
-              <li><a href="recursividad.html">Recursividad</a></li>
-              <li><a href="poo.html">POO</a></li>
-              <li><a href="arreglos.html">Arreglos</a></li>
-            </ul>
-          </li>
+        <li><a href="../index.html">Inicio</a></li>
 
-          <li><a href="#">Algoritmos Computacionales</a>
-            <ul class="submenu algoritmos">
-              <li><a href="diagramas.html">Diagramas</a></li>
-              <li><a href="notacion.html">Notación</a></li>
-              <li><a href="algoritmos.html">Algoritmos</a></li>
-              <li><a href="busqueda.html">Búsqueda</a></li>
-            </ul>
-          </li>
+        <li><a href="#">Lenguajes web</a>
+          <ul class="submenu lenguajes">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+            <li><a href="php.html">PHP</a></li>
+          </ul>
+        </li>
 
-        </ul>
+        <li><a href="#">Programación</a>
+          <ul class="submenu prog">
+            <li><a href="estructuras.html">Estructuras básicas</a></li>
+            <li><a href="recursividad.html">Recursividad</a></li>
+            <li><a href="poo.html">POO</a></li>
+            <li><a href="arreglos.html">Arreglos</a></li>
+          </ul>
+        </li>
 
-      </nav>
-    </header>
+        <li><a href="#">Algoritmos Computacionales</a>
+          <ul class="submenu algoritmos">
+            <li><a href="diagramas.html">Diagramas</a></li>
+            <li><a href="notacion.html">Notación</a></li>
+            <li><a href="algoritmos.html">Algoritmos</a></li>
+            <li><a href="busqueda.html">Búsqueda</a></li>
+          </ul>
+        </li>
 
-    <div class="contenido">
-      <h1>Programación Orientada a Objetos</h1>
-      <p>
-        <img class="poo" src="../img/poo1.png"  width="300px" height="250px"alt="poo"><br>
-        La <b> programación orientada a objetos (POO) </b> es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros 
-        tipos de programación, es paradigma que usa objetos y sus interacciones, para diseñar aplicaciones y programas informáticos. <br> <br>
+      </ul>
 
-        Este tipo de programación es muy distinta a la programación estructurada, debido a su enfoque y a sus propósitos, además de que disminuye los errores y 
-        promociona la reutilización del código. <br> <br>
+    </nav>
+  </header>
 
-        Basa su resolución de problemas en la creación de <b>objetos</b> que son unidades con características y atributos con datos que ayudarán a resolver dichos 
-        problemas.</p>
-      
-      <h2>Características de la programación orientada a objetos</h2>
-      <p>
-        <img class="poo" src="../img/poo2.png"  width="345px" height="240px"alt="poo"><br>
-        <b> - Clase : </b> declaraciones u definiciones de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas 
-        definiciones y la creación de un objeto a partir de ellas. También se les conoce como el nombre de tablas o estados. <br> <br>
+  <div class="contenido">
+    <h1>Programación Orientada a Objetos</h1>
+    <p>
+      <img class="poo" src="../img/poo1.png" width="300px" height="250px" alt="poo"><br>
+      La <b> programación orientada a objetos (POO) </b> es una forma especial de programar, más cercana a como
+      expresaríamos las cosas en la vida real que otros
+      tipos de programación, es paradigma que usa objetos y sus interacciones, para diseñar aplicaciones y programas
+      informáticos. <br> <br>
 
-        <b> - Objeto : </b> Entidad provista de un conjunto de propiedades o atributos (datos) y de comportamiento o funcionalidad (métodos) los mismos que 
-        consecuentemente reaccionan a eventos. Se corresponde con los objetos reales del mundo que nos rodea, o a objetos internos del sistema (del programa). 
-        Es una instancia a una clase. <br> <br>
+      Este tipo de programación es muy distinta a la programación estructurada, debido a su enfoque y a sus propósitos,
+      además de que disminuye los errores y
+      promociona la reutilización del código. <br> <br>
 
-        <b> - Abstracción : </b> Denota las características esenciales de un objeto, donde se capturan sus comportamientos. Cada objeto en el sistema sirve como 
-        modelo de un “agente” abstracto que puede realizar trabajo, informar y cambiar su estado, y "comunicarse" con otros objetos en el sistema sin revelar cómo 
-        se implementan estas características. Es la clave del análisis y el diseño, ya que se puede modelar la realidad o el problema a resolver. <br> <br>
+      Basa su resolución de problemas en la creación de <b>objetos</b> que son unidades con características y atributos
+      con datos que ayudarán a resolver dichos
+      problemas.</p>
 
-        <b> - Encapsulamiento : </b> Reunir todos los elementos que pueden considerarse pertenecientes a una misma entidad, al mismo nivel de abstracción. 
-        Esto permite aumentar la cohesión de los componentes del sistema. <br> <br>
+    <h2>Características de la programación orientada a objetos</h2>
+    <p>
+      <img class="poo" src="../img/poo2.png" width="345px" height="240px" alt="poo"><br>
+      <b> - Clase : </b> declaraciones u definiciones de las propiedades y comportamiento de un tipo de objeto concreto.
+      La instanciación es la lectura de estas
+      definiciones y la creación de un objeto a partir de ellas. También se les conoce como el nombre de tablas o
+      estados. <br> <br>
 
-        <b> - Principio de ocultación : </b> El aislamiento protege a las propiedades de un objeto contra su modificación por quien no tenga derecho a acceder 
-        a ellas, solamente los propios métodos internos del objeto pueden acceder a su estado. <br> <br>
+      <b> - Objeto : </b> Entidad provista de un conjunto de propiedades o atributos (datos) y de comportamiento o
+      funcionalidad (métodos) los mismos que
+      consecuentemente reaccionan a eventos. Se corresponde con los objetos reales del mundo que nos rodea, o a objetos
+      internos del sistema (del programa).
+      Es una instancia a una clase. <br> <br>
 
-        <b> - Polimorfismo : </b> Comportamientos diferentes, asociados a objetos distintos, pueden compartir el mismo nombre, al llamarlos por ese nombre se 
-        utilizará el comportamiento correspondiente al objeto que se esté usando; o, dicho de otro modo, las referencias y las colecciones de objetos pueden
-        contener objetos de diferentes tipos, y la invocación de un comportamiento en una referencia producirá el comportamiento correcto para el tipo real 
-        del objeto referenciado. <br> <br>
+      <b> - Abstracción : </b> Denota las características esenciales de un objeto, donde se capturan sus
+      comportamientos. Cada objeto en el sistema sirve como
+      modelo de un “agente” abstracto que puede realizar trabajo, informar y cambiar su estado, y "comunicarse" con
+      otros objetos en el sistema sin revelar cómo
+      se implementan estas características. Es la clave del análisis y el diseño, ya que se puede modelar la realidad o
+      el problema a resolver. <br> <br>
 
-        <b> - Herencia : </b> Los objetos heredan las propiedades y el comportamiento de todas las clases a las que pertenecen. La herencia organiza y 
-        facilita el polimorfismo y el encapsulamiento permitiendo a los objetos ser definidos y creados como tipos especializados de objetos preexistentes.
-        Estos pueden compartir (y extender) su comportamiento sin tener que volver a implementarlo. <br><br>
+      <b> - Encapsulamiento : </b> Reunir todos los elementos que pueden considerarse pertenecientes a una misma
+      entidad, al mismo nivel de abstracción.
+      Esto permite aumentar la cohesión de los componentes del sistema. <br> <br>
 
-        <b> - Recolección de basura : </b> La recolección de basura o garbage collector es la técnica por la cual el entorno de objetos se encarga de 
-        destruir automáticamente, y por tanto desvincular la memoria asociada, los objetos que hayan quedado sin ninguna referencia a ellos.
-      </p>
+      <b> - Principio de ocultación : </b> El aislamiento protege a las propiedades de un objeto contra su modificación
+      por quien no tenga derecho a acceder
+      a ellas, solamente los propios métodos internos del objeto pueden acceder a su estado. <br> <br>
 
-    </div>
+      <b> - Polimorfismo : </b> Comportamientos diferentes, asociados a objetos distintos, pueden compartir el mismo
+      nombre, al llamarlos por ese nombre se
+      utilizará el comportamiento correspondiente al objeto que se esté usando; o, dicho de otro modo, las referencias y
+      las colecciones de objetos pueden
+      contener objetos de diferentes tipos, y la invocación de un comportamiento en una referencia producirá el
+      comportamiento correcto para el tipo real
+      del objeto referenciado. <br> <br>
 
-  </body>
+      <b> - Herencia : </b> Los objetos heredan las propiedades y el comportamiento de todas las clases a las que
+      pertenecen. La herencia organiza y
+      facilita el polimorfismo y el encapsulamiento permitiendo a los objetos ser definidos y creados como tipos
+      especializados de objetos preexistentes.
+      Estos pueden compartir (y extender) su comportamiento sin tener que volver a implementarlo. <br><br>
+
+      <b> - Recolección de basura : </b> La recolección de basura o garbage collector es la técnica por la cual el
+      entorno de objetos se encarga de
+      destruir automáticamente, y por tanto desvincular la memoria asociada, los objetos que hayan quedado sin ninguna
+      referencia a ellos.
+    </p>
+
+  </div>
+
+</body>
+
 </html>

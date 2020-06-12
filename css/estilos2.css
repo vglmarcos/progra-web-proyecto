@@ -1,12 +1,8 @@
-/**Font descargada de internet**/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 /**Arreglos generales**/
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "Montserrat", sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{

@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Búsqueda de profundidad</title>
-    <!--El normalize.css es para que la página se vea igual en todos los navegadores y tiene unas propiedades para evitar que crezca el padding o borders-->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilos2.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navegacion">
-        <ul class="menu">
 
-          <li><a href="../index.html">Inicio</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>Búsqueda de profundidad</title>
+  <link rel="stylesheet" href="../css/estilos2.css">
+</head>
 
-          <li><a href="#">Lenguajes web</a>
-            <ul class="submenu lenguajes">
-              <li><a href="html.html">HTML</a></li>
-              <li><a href="css.html">CSS</a></li>
-              <li><a href="js.html">JavaScript</a></li>
-              <li><a href="php.html">PHP</a></li>
-            </ul>
-          </li>
+<body>
+  <header>
+    <nav class="navegacion">
+      <ul class="menu">
 
-          <li><a href="#">Programación</a>
-            <ul class="submenu prog">
-              <li><a href="estructuras.html">Estructuras básicas</a></li>
-              <li><a href="recursividad.html">Recursividad</a></li>
-              <li><a href="poo.html">POO</a></li>
-              <li><a href="arreglos.html">Arreglos</a></li>
-            </ul>
-          </li>
+        <li><a href="../index.html">Inicio</a></li>
 
-          <li><a href="#">Algoritmos Computacionales</a>
-            <ul class="submenu algoritmos">
-              <li><a href="diagramas.html">Diagramas</a></li>
-              <li><a href="notacion.html">Notación</a></li>
-              <li><a href="algoritmos.html">Algoritmos</a></li>
-              <li><a href="busqueda.html">Búsqueda</a></li>
-            </ul>
-          </li>
+        <li><a href="#">Lenguajes web</a>
+          <ul class="submenu lenguajes">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+            <li><a href="php.html">PHP</a></li>
+          </ul>
+        </li>
 
-        </ul>
+        <li><a href="#">Programación</a>
+          <ul class="submenu prog">
+            <li><a href="estructuras.html">Estructuras básicas</a></li>
+            <li><a href="recursividad.html">Recursividad</a></li>
+            <li><a href="poo.html">POO</a></li>
+            <li><a href="arreglos.html">Arreglos</a></li>
+          </ul>
+        </li>
 
-      </nav>
-    </header>
+        <li><a href="#">Algoritmos Computacionales</a>
+          <ul class="submenu algoritmos">
+            <li><a href="diagramas.html">Diagramas</a></li>
+            <li><a href="notacion.html">Notación</a></li>
+            <li><a href="algoritmos.html">Algoritmos</a></li>
+            <li><a href="busqueda.html">Búsqueda</a></li>
+          </ul>
+        </li>
 
-    <div class="contenido">
-      <h1>Algoritmo búsqueda en profundidad</h1>
-      <p>Una Búsqueda en profundidad (en inglés DFS o Depth First Search) es un algoritmo de búsqueda no informada utilizado para recorrer todos los nodos de un grafo o árbol (teoría de grafos) de manera ordenada, pero no uniforme. Su funcionamiento consiste en ir expandiendo todos y cada uno de los nodos que va localizando, de forma recurrente, en un camino concreto. Cuando ya no quedan más nodos que visitar en dicho camino, regresa (Backtracking), de modo que repite el mismo proceso con cada uno de los hermanos del nodo ya procesado.</p>
-      <h2>Evaluaión</h2>
-      <li>Completitud: DFS es completo si y solo si usamos búsqueda basada en grafos en espacios de estado finitos, pues todos los nodos serán expandidos.</li>
-      <li>Optimalidad: DFS en ningún caso asegura la optimalidad, pues puede encontrar una solución más profunda que otra en una rama que todavía no ha sido expandida.</li>
-      <li>Complejidad temporal: en el peor caso, es O(b^m), siendo b el factor de ramificación (número promedio de ramificaciones por nodo) y m la máxima profundidad del espacio de estados.</li>
-      <li>Complejidad espacial: O(b^m), siendo b el factor de ramificación y d la profundidad de la solución menos costosa, pues cada nodo generado permanece en memoria, almacenándose la mayor cantidad de nodos en el nivel meta.</li>
-      <h2>Ejemplo</h2>
-      <p>Para el grafo siguiente:</p>
-      <img class="busqueda" src="../img/busqueda1.jpg"  width="400px" height="340px"alt="busqueda">
-      <p>Una búsqueda en profundidad empezando en el nodo A, con la suposición que las aristas a la izquierda son escogidas antes de las aristas a la derecha, el algoritmo va a visitar los nodos en esta orden: A, B, D, F, E, C, G. Se puede notar que, si el algoritmo no recuerde los nodos ya visitados, el algoritmo podría continuar en una vuelta infinita A, B, D, F, E, A, B, D, F, E, etc. sin visitar C o G.</p>
-      <img class="busqueda" src="../img/busqueda2.png"  width="300px" height="250px"alt="busqueda">
+      </ul>
 
-      <h2>Video</h2>
-      <p>A continuación se muestra un video que explica un ejemplo de esto en el siguiente link: https://www.youtube.com/watch?v=UYtnHmls2ec</p>
-      <video controls>
-        <source src="../video/busqueda.mp4" type="video/mp4" preload"metadata">
+    </nav>
+  </header>
 
-      </video>
+  <div class="contenido">
+    <h1>Algoritmo búsqueda en profundidad</h1>
+    <p>Una Búsqueda en profundidad (en inglés DFS o Depth First Search) es un algoritmo de búsqueda no informada
+      utilizado para recorrer todos los nodos de un grafo o árbol (teoría de grafos) de manera ordenada, pero no
+      uniforme. Su funcionamiento consiste en ir expandiendo todos y cada uno de los nodos que va localizando, de forma
+      recurrente, en un camino concreto. Cuando ya no quedan más nodos que visitar en dicho camino, regresa
+      (Backtracking), de modo que repite el mismo proceso con cada uno de los hermanos del nodo ya procesado.</p>
+    <h2>Evaluaión</h2>
+    <li>Completitud: DFS es completo si y solo si usamos búsqueda basada en grafos en espacios de estado finitos, pues
+      todos los nodos serán expandidos.</li>
+    <li>Optimalidad: DFS en ningún caso asegura la optimalidad, pues puede encontrar una solución más profunda que otra
+      en una rama que todavía no ha sido expandida.</li>
+    <li>Complejidad temporal: en el peor caso, es O(b^m), siendo b el factor de ramificación (número promedio de
+      ramificaciones por nodo) y m la máxima profundidad del espacio de estados.</li>
+    <li>Complejidad espacial: O(b^m), siendo b el factor de ramificación y d la profundidad de la solución menos
+      costosa, pues cada nodo generado permanece en memoria, almacenándose la mayor cantidad de nodos en el nivel meta.
+    </li>
+    <h2>Ejemplo</h2>
+    <p>Para el grafo siguiente:</p>
+    <img class="busqueda" src="../img/busqueda1.jpg" width="400px" height="340px" alt="busqueda">
+    <p>Una búsqueda en profundidad empezando en el nodo A, con la suposición que las aristas a la izquierda son
+      escogidas antes de las aristas a la derecha, el algoritmo va a visitar los nodos en esta orden: A, B, D, F, E, C,
+      G. Se puede notar que, si el algoritmo no recuerde los nodos ya visitados, el algoritmo podría continuar en una
+      vuelta infinita A, B, D, F, E, A, B, D, F, E, etc. sin visitar C o G.</p>
+    <img class="busqueda" src="../img/busqueda2.png" width="300px" height="250px" alt="busqueda">
+
+    <h2>Video</h2>
+    <p>A continuación se muestra un video que explica un ejemplo de esto en el siguiente link:
+      https://www.youtube.com/watch?v=UYtnHmls2ec</p>
+    <video controls>
+      <source src="../video/busqueda.mp4" type="video/mp4" preload="metadata">
+
+    </video>
 
 
 
-    </div>
+  </div>
 
-  </body>
+</body>
+
 </html>

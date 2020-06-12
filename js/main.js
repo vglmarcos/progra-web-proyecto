@@ -1,6 +1,6 @@
 const contador = () => {
     let n = 1;
-    if(localStorage.getItem('count') === null) {
+    if (localStorage.getItem('count') === null) {
         localStorage.setItem('count', '1');
     } else {
         n = parseInt(localStorage.getItem('count')) + 1;
